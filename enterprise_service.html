@@ -1,18 +1,68 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>enterprise_service — Rajshahi Online</title>
-<link rel="icon" href="assets/base/img/layout/favicon.ico" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/base/css/variables.css" />
-<link rel="stylesheet" href="assets/base/css/base.css" />
-<link rel="stylesheet" href="assets/base/css/components.css" />
-<link rel="stylesheet" href="assets/base/css/layout.css" />
-<link rel="stylesheet" href="assets/base/css/utilities.css" />
-<link rel="stylesheet" href="assets/base/css/responsive.css" />
-</head><body>
-<div class="c-topbar"><div class="container"><div class="c-icons"><i class="fas fa-phone-alt"></i> +88 09666 777799</div></div></div>
-<header class="c-navbar"><div class="container"><div class="c-navbar-wrapper"><div class="c-brand"><a href="index.html"><img src="assets/base/img/layout/logo.png" alt="Rajshahi Online" style="max-height:50px;" /></a></div><nav class="c-mega-menu"><ul><li><a href="index.html">Home</a></li></ul></nav></div></div></header>
-<main><section class="enterprise-hero" style="min-height:300px; padding:60px 0;"><div class="container"><h1>enterprise_service</h1><p>Content coming soon for V3.</p></div></section></main>
-<footer class="c-layout-footer"><div class="container"><div class="c-postfooter"><p>© <span id="currentYear">2026</span> Rajshahi Online Ltd.</p></div></div></footer>
-<script src="assets/base/js/main.js"></script>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enterprise Services — Rajshahi Online</title>
+    <link rel="icon" href="assets/base/img/layout/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/base/css/variables.css" />
+    <link rel="stylesheet" href="assets/base/css/base.css" />
+    <link rel="stylesheet" href="assets/base/css/components.css" />
+    <link rel="stylesheet" href="assets/base/css/layout.css" />
+    <link rel="stylesheet" href="assets/base/css/utilities.css" />
+    <link rel="stylesheet" href="assets/base/css/responsive.css" />
+</head>
+<body>
+    <!-- Header (same) -->
+    <div class="c-topbar"><div class="container"><div class="c-icons"><i class="fas fa-phone-alt"></i> +88 09666 777799</div><div class="c-links"><a href="#"><i class="fab fa-facebook-f"></i></a><div class="theme-toggle"><span class="toggle-label">🌙</span><div class="toggle-track"><div class="toggle-thumb"></div></div></div></div></div></div>
+    <header class="c-navbar"><div class="container"><div class="c-navbar-wrapper"><div class="c-brand"><a href="index.html"><img src="assets/base/img/layout/logo.png" alt="Rajshahi Online" /></a></div><button class="c-hor-nav-toggler" id="navToggler"><span class="c-line"></span><span class="c-line"></span><span class="c-line"></span></button><nav class="c-mega-menu" id="mainNav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="javascript:;" aria-haspopup="true">Services <i class="fas fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="hosting.html">Shared Hosting</a></li><li><a href="vps.html">VPS Hosting</a></li><li><a href="dhaka-vds.html">Dhaka VDS</a></li><li><a href="dedicated.html">Dedicated Servers</a></li><li><a href="reseller.html">Reseller Hosting</a></li><li><a href="bdix.html">BDIX Hosting</a></li><li class="divider"></li><li><a href="domains.html">Domain Registration</a></li><li><a href="ssl.html">SSL Certificates</a></li><li class="c-active"><a href="enterprise_service.html">Enterprise Services</a></li></ul></li><li><a href="contact.html">Contact</a></li><li><a href="career.html"><i class="fas fa-user"></i> Career</a></li></ul></nav></div></div></header>
+
+    <main>
+        <section class="enterprise-hero" style="min-height:300px; padding:60px 0;">
+            <div class="container">
+                <h1>Enterprise <span>Services</span></h1>
+                <p>Complete enterprise solutions from network architecture to security transformation.</p>
+                <div class="btn-group"><a href="#content" class="btn btn-primary">Learn More</a><a href="contact.html" class="btn btn-outline-light">Contact Sales</a></div>
+            </div>
+        </section>
+
+        <section class="py-3" id="content">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Enterprise <span class="highlight">Solutions</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div style="background:var(--glass-bg); backdrop-filter:blur(16px); border-radius:var(--radius); padding:30px; border:1px solid var(--glass-border);">
+                    <h3>Industry 5.0 Ready</h3>
+                    <p>Cutting-edge solutions for smart manufacturing, IoT integration, AI-driven operations, and cyber-physical systems.</p>
+                    <div class="soc-dashboard" style="background:var(--dark-navy);color:white;padding:20px;border-radius:var(--radius);border-left:4px solid var(--primary);margin-top:20px;">
+                        <h4 style="color:var(--accent-cyan);">🛡️ SECURITY OPERATIONS CENTER</h4>
+                        <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);"><span>Active Threats</span><span style="color:var(--alert-red);">3 Critical</span></div>
+                        <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);"><span>SIEM Alerts</span><span style="color:var(--gold);">1,245</span></div>
+                        <div style="display:flex;justify-content:space-between;padding:6px 0;"><span>EDR Coverage</span><span style="color:var(--accent-teal);">99.2%</span></div>
+                    </div>
+                    <h3>Service Tiers</h3>
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:16px;">
+                        <div class="glass-card" style="padding:20px;border-top:4px solid var(--gold);"><h4>Essential</h4><p>Core network, DNS, email, web hosting.</p></div>
+                        <div class="glass-card" style="padding:20px;border-top:4px solid var(--primary);"><h4>Advanced</h4><p>SDN, NaaS, IPv6, BGP optimization.</p></div>
+                        <div class="glass-card" style="padding:20px;border-top:4px solid var(--accent-cyan);"><h4>Enterprise</h4><p>SIEM, EDR/XDR, SOC operations, threat intelligence.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3">
+            <div class="container"><div class="cta-section glass-card"><h2>Ready to transform your enterprise?</h2><a href="contact.html" class="btn btn-primary">Request Assessment</a></div></div>
+        </section>
+    </main>
+
+    <footer class="c-layout-footer"><div class="container"><div class="c-postfooter"><p>© <span id="currentYear">2026</span> Rajshahi Online Ltd.</p></div></div></footer>
+    <script src="assets/base/js/main.js"></script>
+    <script src="assets/base/js/navigation.js"></script>
+    <script src="assets/base/js/theme.js"></script>
+    <script src="assets/base/js/scroll-reveal.js"></script>
+    <script src="assets/base/js/hero-animation.js"></script>
+</body>
+</html>
