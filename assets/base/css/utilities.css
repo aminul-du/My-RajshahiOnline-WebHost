@@ -18,6 +18,22 @@
 .enterprise-hero p { font-size: 20px; opacity: 0.9; max-width: 580px; margin-bottom: 30px; line-height: 1.7; }
 .enterprise-hero .btn-group { display: flex; flex-wrap: wrap; gap: 14px; }
 
+.hero-particles {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    overflow: hidden; pointer-events: none; z-index: 1;
+}
+.hero-particles .particle {
+    position: absolute; width: 4px; height: 4px;
+    background: rgba(255,255,255,0.4); border-radius: 50%;
+    animation: float-particle linear infinite;
+}
+@keyframes float-particle {
+    0% { transform: translateY(100%) scale(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+}
+
 .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 20px; }
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
@@ -27,3 +43,24 @@
 [data-animate].revealed { opacity: 1; transform: translateY(0); }
 .blink { animation: blink 1.2s infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+/* Floating labels */
+.form-floating { position: relative; }
+.form-floating label {
+    position: absolute; top: 14px; left: 16px;
+    color: var(--neutral-gray); font-size: 14px;
+    pointer-events: none; transition: all 0.2s ease;
+}
+.form-floating input:focus + label,
+.form-floating textarea:focus + label,
+.form-floating input:not(:placeholder-shown) + label,
+.form-floating textarea:not(:placeholder-shown) + label {
+    top: -10px; left: 12px; font-size: 12px;
+    color: var(--primary); background: var(--white); padding: 0 6px;
+}
+[data-theme="dark"] .form-floating input:focus + label,
+[data-theme="dark"] .form-floating textarea:focus + label,
+[data-theme="dark"] .form-floating input:not(:placeholder-shown) + label,
+[data-theme="dark"] .form-floating textarea:not(:placeholder-shown) + label {
+    background: var(--white);
+}

@@ -1,23 +1,17 @@
-# Rajshahi Online Hosting — Version 2.0
+# Rajshahi Online Hosting — Version 3.0
 
-Enterprise-grade web hosting platform for Bangladesh and global audiences.
-
-## Features
-- NVMe SSD Storage
-- LiteSpeed + LSCache
-- BDIX Connectivity + Global CDN
-- 24/7 Human Support
-- Enterprise Security (SOC, DDoS Protection)
+## New Features
+- Dark Mode toggle
+- Glassmorphism cards
+- Pricing toggle (Monthly/Annual)
+- Animated hero with particles
+- Floating labels on forms
+- Micro-interactions
 
 ## Tech Stack
-- HTML5, CSS3 (Custom Variables, Grid, Flexbox)
-- JavaScript (Vanilla, Intersection Observer)
-- Font Awesome 6, Google Fonts (Inter, Plus Jakarta Sans)
+- HTML5, CSS3 (Custom Properties, Flexbox, Grid)
+- JavaScript (ES6, Intersection Observer)
+- Font Awesome 6, Google Fonts
 
 ## Deployment
-1. Clone this repository.
-2. Upload to your cPanel document root.
-3. Ensure `.htaccess` is applied for security headers.
-
-## License
-Proprietary — Rajshahi Online Ltd.
+Run `./deploy.sh` to commit and push changes.
