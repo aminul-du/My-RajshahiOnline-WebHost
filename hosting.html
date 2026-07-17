@@ -1,18 +1,123 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>hosting — Rajshahi Online</title>
-<link rel="icon" href="assets/base/img/layout/favicon.ico" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/base/css/variables.css" />
-<link rel="stylesheet" href="assets/base/css/base.css" />
-<link rel="stylesheet" href="assets/base/css/components.css" />
-<link rel="stylesheet" href="assets/base/css/layout.css" />
-<link rel="stylesheet" href="assets/base/css/utilities.css" />
-<link rel="stylesheet" href="assets/base/css/responsive.css" />
-</head><body>
-<div class="c-topbar"><div class="container"><div class="c-icons"><i class="fas fa-phone-alt"></i> +88 09666 777799</div></div></div>
-<header class="c-navbar"><div class="container"><div class="c-navbar-wrapper"><div class="c-brand"><a href="index.html"><img src="assets/base/img/layout/logo.png" alt="Rajshahi Online" style="max-height:50px;" /></a></div><nav class="c-mega-menu"><ul><li><a href="index.html">Home</a></li></ul></nav></div></div></header>
-<main><section class="enterprise-hero" style="min-height:300px; padding:60px 0;"><div class="container"><h1>hosting</h1><p>Content coming soon for V3.</p></div></section></main>
-<footer class="c-layout-footer"><div class="container"><div class="c-postfooter"><p>© <span id="currentYear">2026</span> Rajshahi Online Ltd.</p></div></div></footer>
-<script src="assets/base/js/main.js"></script>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shared Hosting — Rajshahi Online</title>
+    <link rel="icon" href="assets/base/img/layout/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/base/css/variables.css" />
+    <link rel="stylesheet" href="assets/base/css/base.css" />
+    <link rel="stylesheet" href="assets/base/css/components.css" />
+    <link rel="stylesheet" href="assets/base/css/layout.css" />
+    <link rel="stylesheet" href="assets/base/css/utilities.css" />
+    <link rel="stylesheet" href="assets/base/css/responsive.css" />
+</head>
+<body>
+    <!-- Header same as index; for brevity, we'll include a common header snippet in a real deployment -->
+    <div class="c-topbar"><div class="container"><div class="c-icons"><i class="fas fa-phone-alt"></i> +88 09666 777799 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> hosting@rajshahionline.com</div><div class="c-links"><a href="#"><i class="fab fa-facebook-f"></i></a><div class="theme-toggle"><span class="toggle-label">🌙</span><div class="toggle-track" aria-label="Toggle dark mode" role="button" tabindex="0"><div class="toggle-thumb"></div></div></div></div></div></div>
+    <header class="c-navbar"><div class="container"><div class="c-navbar-wrapper"><div class="c-brand"><a href="index.html"><img src="assets/base/img/layout/logo.png" alt="Rajshahi Online" /></a></div><button class="c-hor-nav-toggler" id="navToggler"><span class="c-line"></span><span class="c-line"></span><span class="c-line"></span></button><nav class="c-mega-menu" id="mainNav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="javascript:;" aria-haspopup="true">Services <i class="fas fa-chevron-down"></i></a><ul class="dropdown-menu"><li class="c-active"><a href="hosting.html">Shared Hosting</a></li><li><a href="vps.html">VPS Hosting</a></li><li><a href="dhaka-vds.html">Dhaka VDS</a></li><li><a href="dedicated.html">Dedicated Servers</a></li><li><a href="reseller.html">Reseller Hosting</a></li><li><a href="bdix.html">BDIX Hosting</a></li><li class="divider"></li><li><a href="domains.html">Domain Registration</a></li><li><a href="ssl.html">SSL Certificates</a></li><li><a href="enterprise_service.html">Enterprise Services</a></li></ul></li><li><a href="contact.html">Contact</a></li><li><a href="career.html"><i class="fas fa-user"></i> Career</a></li></ul></nav></div></div></header>
+
+    <main>
+        <section class="enterprise-hero" style="min-height:300px; padding:60px 0;">
+            <div class="container">
+                <h1>Shared <span>Hosting</span></h1>
+                <p>NVMe‑powered performance, LiteSpeed caching, and CloudLinux isolation — dedicated‑like speed at shared hosting prices.</p>
+                <div class="btn-group"><a href="#pricing" class="btn btn-primary">View Plans</a><a href="contact.html" class="btn btn-outline-light">Talk to Sales</a></div>
+            </div>
+        </section>
+
+        <section class="py-3" id="pricing">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Shared Hosting <span class="highlight">Plans</span></h2>
+                    <div class="pricing-toggle">
+                        <span>Monthly</span>
+                        <div class="toggle-group">
+                            <button class="active" data-mode="monthly">Monthly</button>
+                            <button data-mode="annual">Annual</button>
+                        </div>
+                        <span class="save-badge">Save 15%</span>
+                    </div>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card glass-card">
+                        <div class="plan-name">Starter</div>
+                        <div class="price" data-plan="starter">$2.99 <span>/mo</span></div>
+                        <div class="price-note">Billed monthly</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 Website</li>
+                            <li><i class="fas fa-check"></i> 10 GB NVMe</li>
+                            <li><i class="fas fa-check"></i> Free SSL</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="pricing-card featured glass-card">
+                        <div class="best-badge">★ Best Value</div>
+                        <div class="plan-name">Business</div>
+                        <div class="price" data-plan="business">$9.99 <span>/mo</span></div>
+                        <div class="price-note">Billed monthly</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 10 Websites</li>
+                            <li><i class="fas fa-check"></i> 50 GB NVMe</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-gold">Order Now</a>
+                    </div>
+                    <div class="pricing-card glass-card">
+                        <div class="plan-name">Professional</div>
+                        <div class="price" data-plan="professional">$19.99 <span>/mo</span></div>
+                        <div class="price-note">Billed monthly</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 50 Websites</li>
+                            <li><i class="fas fa-check"></i> 100 GB NVMe</li>
+                            <li><i class="fas fa-check"></i> WordPress Staging</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="pricing-card glass-card">
+                        <div class="plan-name">Enterprise</div>
+                        <div class="price" data-plan="enterprise">$39.99 <span>/mo</span></div>
+                        <div class="price-note">Billed monthly</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited Websites</li>
+                            <li><i class="fas fa-check"></i> 200 GB NVMe</li>
+                            <li><i class="fas fa-check"></i> Dedicated IP</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3 bg-light">
+            <div class="container">
+                <div style="background:var(--glass-bg); backdrop-filter:blur(16px); border-radius:var(--radius); padding:30px; border:1px solid var(--glass-border);">
+                    <h3>All plans include:</h3>
+                    <ul style="display:grid; grid-template-columns:1fr 1fr; gap:10px; list-style:none; padding:0; margin-top:16px;">
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> NVMe SSD Storage</li>
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> LiteSpeed Web Server + LSCache</li>
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> CloudLinux with CageFS</li>
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> Free SSL Certificate</li>
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> Daily Offsite Backups</li>
+                        <li><i class="fas fa-check" style="color:var(--accent-emerald);"></i> 24/7 Human Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3">
+            <div class="container"><div class="cta-section glass-card"><h2>Start with Shared Hosting Today</h2><a href="#pricing" class="btn btn-primary">Choose Your Plan</a></div></div>
+        </section>
+    </main>
+
+    <footer class="c-layout-footer"><div class="container"><div class="c-prefooter"><div class="row"><div><img src="assets/base/img/layout/logo.png" alt="Rajshahi Online" style="max-height:50px; filter:brightness(0) invert(1);" /><p>Premium hosting with NVMe speed.</p><div class="c-socials"><a href="#"><i class="fab fa-facebook-f"></i></a></div></div><div><h4>Quick Links</h4><ul class="c-links"><li><a href="index.html">Home</a></li><li><a href="hosting.html">Hosting</a></li></ul></div><div><h4>Contact</h4><ul class="c-address"><li><i class="fas fa-location-dot"></i> Rajshahi, Bangladesh</li><li><i class="fas fa-envelope"></i> hosting@rajshahionline.com</li><li><i class="fas fa-phone-alt"></i> +88 09666 777799</li></ul></div></div></div><div class="c-postfooter"><p>© <span id="currentYear">2026</span> Rajshahi Online Ltd.</p></div></div></footer>
+    <script src="assets/base/js/main.js"></script>
+    <script src="assets/base/js/navigation.js"></script>
+    <script src="assets/base/js/theme.js"></script>
+    <script src="assets/base/js/pricing-toggle.js"></script>
+    <script src="assets/base/js/scroll-reveal.js"></script>
+    <script src="assets/base/js/hero-animation.js"></script>
+</body>
+</html>

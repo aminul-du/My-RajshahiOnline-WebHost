@@ -1,5 +1,4 @@
 :root {
-    /* Light mode (default) */
     --primary: #0A2463;
     --primary-dark: #061A4A;
     --secondary: #1E3A8A;
@@ -27,8 +26,6 @@
     --glass-border: rgba(255,255,255,0.2);
     --glass-shadow: 0 8px 32px rgba(0,0,0,0.08);
 }
-
-/* Dark mode */
 [data-theme="dark"] {
     --primary: #60A5FA;
     --primary-dark: #3B82F6;

@@ -1,4 +1,3 @@
-// Pricing Toggle (Monthly/Annual)
 document.addEventListener('DOMContentLoaded', function() {
     const toggleBtns = document.querySelectorAll('.pricing-toggle .toggle-group button');
     if (!toggleBtns.length) return;

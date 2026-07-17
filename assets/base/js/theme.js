@@ -1,4 +1,3 @@
-// Dark Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.querySelector('.theme-toggle .toggle-track');
     if (!toggle) return;

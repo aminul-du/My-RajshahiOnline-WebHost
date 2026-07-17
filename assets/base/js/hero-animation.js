@@ -1,4 +1,3 @@
-// Animated Hero Particles
 document.addEventListener('DOMContentLoaded', function() {
     const hero = document.querySelector('.enterprise-hero');
     if (!hero) return;

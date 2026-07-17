@@ -1,17 +1,18 @@
-# Rajshahi Online Hosting — Version 3.0
+# Rajshahi Online Hosting — Version 3.1
 
-## New Features
-- Dark Mode toggle
+## New in V3.1
+- All pages fully upgraded to V3 design (glassmorphism, dark mode, animated hero)
+- New Dhaka VDS page with dedicated plans
+- Pricing toggle (monthly/annual) on all relevant pages
+- Real content for every service
+- Updated navigation with all pages linked
+
+## Features
+- Dark Mode toggle with persistence
 - Glassmorphism cards
-- Pricing toggle (Monthly/Annual)
-- Animated hero with particles
 - Floating labels on forms
-- Micro-interactions
-
-## Tech Stack
-- HTML5, CSS3 (Custom Properties, Flexbox, Grid)
-- JavaScript (ES6, Intersection Observer)
-- Font Awesome 6, Google Fonts
+- Animated hero particles
+- Mobile‑responsive
 
 ## Deployment
-Run `./deploy.sh` to commit and push changes.
+Run `./deploy.sh` to commit and push.
