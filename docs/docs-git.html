@@ -154,26 +154,52 @@ git config --global user.email "your.email@example.com"</pre>
     </ul>
     <p>To update live site: <strong>Manage → Pull or Deploy</strong>.</p>
 
-    <!-- ===== 6. deploy.sh Script ===== -->
+    <!-- ===== 6. deploy.sh Script (Enhanced with summary) ===== -->
     <h2>6. <code>deploy.sh</code> – One‑Command Deployment</h2>
-    <p>This script pulls, adds, commits, and pushes — <strong>no token inside</strong>.</p>
+    <p>
+        This script pulls, adds, commits, and pushes — <strong>no token inside</strong>.
+        After a successful push, it <strong>displays a summary</strong> of changed files.
+    </p>
     <pre id="deployScript">
 #!/bin/bash
 set -e
 
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
 NC='\033[0m'
 
-echo -e "${GREEN}🚀 Deploying...${NC}"
+echo -e "${GREEN}🚀 Rajshahi Online Hosting — Automated Deployment${NC}"
 
+# 1. Pull latest
+echo -e "${GREEN}⬇️  Pulling latest...${NC}"
 git pull origin main --allow-unrelated-histories --no-edit || true
+
+# 2. Stage changes
+echo -e "${GREEN}📦 Staging...${NC}"
 git add .
+
+# 3. Check if there are changes to commit
+if git diff --staged --quiet; then
+    echo -e "${YELLOW}⚠️  No changes to commit.${NC}"
+    echo -e "${GREEN}✅ Deployment skipped – nothing to push.${NC}"
+    exit 0
+fi
+
+# 4. Commit
 COMMIT_MSG="${1:-Auto-deploy: $(date '+%Y-%m-%d %H:%M:%S')}"
-git commit -m "$COMMIT_MSG" || echo -e "${YELLOW}No changes${NC}"
+echo -e "${GREEN}📝 Committing: $COMMIT_MSG${NC}"
+git commit -m "$COMMIT_MSG"
+
+# 5. Push
+echo -e "${GREEN}⬆️  Pushing...${NC}"
 git push origin master:main
 
-echo -e "${GREEN}✅ Done.${NC}"
+# 6. Show summary of what changed
+echo -e "\n${CYAN}📊 Summary of this deployment:${NC}"
+git show --stat --oneline HEAD
+
+echo -e "\n${GREEN}✅ Deployment complete!${NC}"
     </pre>
     <button class="copy-btn" onclick="copyDeployScript()" style="background:#0A2463; color:white; border:none; padding:6px 18px; border-radius:6px; cursor:pointer; font-weight:600; margin-top:4px;">
         <i class="fas fa-copy"></i> Copy Script
@@ -183,6 +209,15 @@ echo -e "${GREEN}✅ Done.${NC}"
         <strong>💡 Usage:</strong>
         <pre style="background:#1E293B; margin:6px 0 0; padding:10px 14px;">chmod +x deploy.sh
 ./deploy.sh "Your commit message"   # or just ./deploy.sh</pre>
+        <p style="margin-top:8px; font-size:14px;">
+            After deployment, you'll see a summary like:<br>
+            <code style="background:#1E293B; color:#E2E8F0; padding:4px 10px; display:inline-block; border-radius:4px;">
+            ed245ae Auto-deploy: 2026-07-17 08:28:24<br>
+            deploy.sh | 35 +++++++++++++++++++++++++++++++++++<br>
+            docs/docs-git.html | 271 +++++++++++++++++++++++++++<br>
+            2 files changed, 306 insertions(+)
+            </code>
+        </p>
     </div>
 
     <!-- ===== 7. Common Commands ===== -->
@@ -247,7 +282,7 @@ git push origin master:main --force</pre>
     <!-- ===== Footer ===== -->
     <div class="footer">
         <i class="fas fa-check-circle" style="color:#10B981;"></i>
-        Version 2.0 – All Git &amp; Deployment commands documented.
+        Version 2.1 – Now with deployment summary in <code>deploy.sh</code>.
         <br>
         <a href="https://github.com/aminul-du/My-RajshahiOnline-WebHost" target="_blank">GitHub</a> ·
         <a href="https://webhost.rajshahionline.com.bd" target="_blank">Live Site</a> ·
